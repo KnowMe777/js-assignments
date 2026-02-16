@@ -10,6 +10,7 @@ const noTasks = document.getElementById("noTasks");
 
 function addTask() {
   const taskText = userInput.value.trim();
+  if (!taskText) return;
 
   // Create task object
   const task = {
